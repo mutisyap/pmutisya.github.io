@@ -22,7 +22,7 @@
                     <!-- <img class="" src="https://meliora.co.ke/assets/images/mulika/mulika.svg"> -->
                 </div>
                 <hr class="mt-1 mb-1">
-                <a class="card-title" href="{{project.url}}">{{project.name}}</a> 
+                <u><a class="card-title" href="{{project.url}}">{{project.name}}</a> </u>
                 <small class="float-right"> by <a
                         href="{{project.ownerUrl}}">{{project.owner}}</a></small>
                 <p class="text-muted">{{project.elevatorPitch}}</p>
@@ -32,18 +32,13 @@
             <hr>
 
             <h5>Skills and Technologies</h5>
-            <div>
+            <div *ngFor="let skill of skillList">
                 <div class="pull-left">
                     <!-- <img class="" src="https://meliora.co.ke/assets/images/mulika/mulika.svg"> -->
                 </div>
-                <hr class="mt-1 mb-1">
-                <a class="card-title">Docker</a>
-                <p class="text-muted">Mulika is a service, transactional and infrastructure monitoring solution</p>
-            </div>
-
-            <div class="ml-2">
-                <markdown src="../../../assets/archiva.md"></markdown>
-                <!-- <markdown src="https://raw.githubusercontent.com/mutisyap/io/main/archiva.md"></markdown> -->
+                <!-- <br class="mt-0 mb-1"> -->
+                <u><a class="card-title mt-3">{{skill.name}}</a></u>
+                <p class="text-muted">{{skill.description}}</p>
             </div>
             <div hidden>
                 <ul>
