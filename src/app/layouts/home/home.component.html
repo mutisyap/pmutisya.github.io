@@ -22,7 +22,7 @@
                     <!-- <img class="" src="https://meliora.co.ke/assets/images/mulika/mulika.svg"> -->
                 </div>
                 <hr class="mt-1 mb-1">
-                <u><a class="card-title" href="{{project.url}}">{{project.name}}</a> </u>
+                <u><a class="card-title" [routerLink]="['/projects']" [queryParams]="{proj: project.id}">{{project.name}}</a> </u>
                 <small class="float-right"> by <a
                         href="{{project.ownerUrl}}">{{project.owner}}</a></small>
                 <p class="text-muted">{{project.elevatorPitch}}</p>

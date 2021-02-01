@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="">
+        <!-- Single Project -->
+        <div *ngIf="currentProject" class="mt-4">
+
+            <div class="clearfix">
+                <img src="{{currentProject.iconUrl}}" class="float-left mr-4" style="height: fit-content;">
+
+                <u>
+                    <h3 class="card-title">{{currentProject.name}}</h3>
+                </u>
+
+                <p>{{currentProject.elevatorPitch}}</p>
+
+            </div>
+
+            <!-- Blogs for the project -->
+            <div class="mt-4">
+                <u>
+                    <h3 class="card-title">{{currentProject.name}} Blogs</h3>
+                </u>
+            </div>
+
+            <div class="row">
+                <div class="card col-md-5 mr-2">
+                    <h5 class="mt-1">Blog Title</h5>
+                    <small>Posted 3 days ago</small>
+                </div>
+                <div class="card col-md-6">
+                    <h5 class="mt-1">Blog Title</h5>
+                    <small>Posted 3 days ago</small>
+                </div>
+                <div class="card col-md-6">
+                    <h5 class="mt-1">Blog Title</h5>
+                    <small>Posted 3 days ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

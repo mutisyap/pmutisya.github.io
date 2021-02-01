@@ -8,12 +8,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { HomeComponent } from './layouts/home/home.component';
+import { BlogComponent } from './blog/blog.component';
+import { ProjectComponent } from './project/project.component';
+import { SkillComponent } from './skill/skill.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    BlogComponent,
+    ProjectComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,
