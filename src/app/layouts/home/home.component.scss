@@ -1,13 +1,11 @@
 .home {
-  .card {
-    background-color: #fff;
-  }
-
   .profile-card {
     border: none;
+    position: sticky;
+    top: 120px;
 
-    .card-body{
-      padding: 0px;
+    .card-body {
+      padding: 0;
     }
 
     .profile-img {
@@ -16,21 +14,90 @@
       margin-bottom: 20px;
       border: 5px solid #f1f1f1;
     }
+
     .title {
       color: #80868b;
       font-size: 1rem;
       letter-spacing: 1px;
       font-weight: bold;
+      margin-bottom: 10px;
     }
 
-    h5{
+    hr {
+      width: 80%;
+    }
+
+    h5 {
       color: #3c4043;
       font-size: 1.1rem;
     }
-    p{
+
+    p {
       color: #5f6063;
     }
+  }
 
+  .content-body {
+    .section-title {
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #3c4043;
+    }
 
+    .projects {
+      .project-title a {
+        color: #5f6063;
+        outline: none!important;
+        box-shadow: none!important;
+        text-decoration: none!important;
+        border-bottom: 1px solid #5f6063;
+        padding-bottom: 3px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+
+      p,
+      small {
+        color: #80868b;
+        letter-spacing: 0.5px;
+      }
+
+      .blogs-btn {
+        background-color: #F4BD7D;
+        color: #5f6063;
+        font-weight: 600;
+        padding: 3px 20px;
+        outline: none!important;
+        box-shadow: none!important;
+      }
+    }
+
+    .skills {
+      .skill-item {
+        margin-bottom: 40px;
+      }
+
+      .skill-title a {
+        color: #5f6063;
+        outline: none!important;
+        box-shadow: none!important;
+        text-decoration: none!important;
+        border-bottom: 1px solid #5f6063;
+        padding-bottom: 3px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+
+      p {
+        color: #80868b;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}
+@media (max-width:760px) {
+  .profile-card {
+    position: relative!important;
+    top: 0px!important;
   }
 }

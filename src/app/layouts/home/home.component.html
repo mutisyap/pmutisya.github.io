@@ -15,36 +15,56 @@
         </div>
         <hr class="m-0">
         <div class="card-body mt-3">
-          <h5 >Projects</h5>
+          <h5>Projects</h5>
           <p>10+ </p>
         </div>
       </div>
     </div>
 
-    <div class="col-md-8">
-      <h5>Projects</h5>
-      <div *ngFor="let project of projectList">
-        <div class="pull-left">
-          <!-- <img class="" src="https://meliora.co.ke/assets/images/mulika/mulika.svg"> -->
+    <div class="col-md-8 content-body">
+
+      <h4 class="section-title">Projects</h4>
+
+      <hr class="my-2">
+
+      <div *ngFor="let project of projectList" class="projects mb-5">
+
+        <div class="project-item">
+
+          <div class="row">
+            <div class="col-6 col-md-6">
+              <h5 class="project-title"><a [routerLink]="['/projects']" [queryParams]="{proj: project.id}">{{project.name}}</a> </h5>
+            </div>
+
+            <div class="col-6 col-md-6 text-right">
+              <small> by <a href="{{project.ownerUrl}}">{{project.owner}}</a></small>
+            </div>
+          </div>
+
+          <p>{{project.elevatorPitch}}</p>
+
+          <button type="button" class="btn blogs-btn btn-sm">3 blogs</button>
         </div>
-        <hr class="mt-1 mb-1">
-        <u><a class="card-title" [routerLink]="['/projects']" [queryParams]="{proj: project.id}">{{project.name}}</a> </u>
-        <small class="float-right"> by <a href="{{project.ownerUrl}}">{{project.owner}}</a></small>
-        <p class="text-muted">{{project.elevatorPitch}}</p>
-        <small> 3 blogs</small>
+
       </div>
 
-      <hr>
 
-      <h5>Skills and Technologies</h5>
-      <div *ngFor="let skill of skillList">
-        <div class="pull-left">
-          <!-- <img class="" src="https://meliora.co.ke/assets/images/mulika/mulika.svg"> -->
+      <h4 class="section-title">Skills and Technologies</h4>
+
+      <hr class="my-2">
+
+
+      <div *ngFor="let skill of skillList" class="skills">
+
+        <div class="skill-item">
+          <h5 class="skill-title"><a class="card-title mt-3">{{skill.name}}</a></h5>
+          <p>{{skill.description}}</p>
         </div>
-        <!-- <br class="mt-0 mb-1"> -->
-        <u><a class="card-title mt-3">{{skill.name}}</a></u>
-        <p class="text-muted">{{skill.description}}</p>
+
       </div>
+
+
+
       <div hidden>
         <ul>
           <li>Senior Software Engineer; <a href="https://meliora.co.ke">Meliora Technologies Limited</a></li>
