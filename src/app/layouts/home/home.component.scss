@@ -1,0 +1,36 @@
+.home {
+  .card {
+    background-color: #fff;
+  }
+
+  .profile-card {
+    border: none;
+
+    .card-body{
+      padding: 0px;
+    }
+
+    .profile-img {
+      width: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 5px solid #f1f1f1;
+    }
+    .title {
+      color: #80868b;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+
+    h5{
+      color: #3c4043;
+      font-size: 1.1rem;
+    }
+    p{
+      color: #5f6063;
+    }
+
+
+  }
+}

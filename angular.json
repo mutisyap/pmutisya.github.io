@@ -5,7 +5,11 @@
   "projects": {
     "pmutisya": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+                  "styleext": "scss"
+            }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -20,17 +24,16 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
-              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
+              "src/styles.scss",
               "node_modules/prismjs/themes/prism-okaidia.css"
             ],
             "scripts": [
               "node_modules/marked/lib/marked.js",
               "node_modules/prismjs/prism.js",
-              
+
               "node_modules/prismjs/components/prism-csharp.min.js",
               "node_modules/prismjs/components/prism-css.min.js"
             ]
@@ -91,11 +94,10 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
